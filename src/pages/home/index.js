@@ -68,6 +68,7 @@ const HeaderBrandIcon = styled(FaSwimmingPool)`
 const HeaderDescription = styled.p`
     font-size: 1.3em;
     font-weight: 600;
+    color: rgba(0, 0, 0, 0.66);
     @media (max-width: 712px) {
         font-size: 0.8em;
         text-align: center;
@@ -115,11 +116,11 @@ export const Home = () => {
                 <HeaderRow>
                     <HeaderColumn >
                         <div style={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", height: "auto"}}>
-                            <HeaderBrandIcon />
-                            <HeaderTitle >laury.</HeaderTitle>
+                            {/* <HeaderBrandIcon /> */}
+                            <HeaderTitle >Welcome to Laury</HeaderTitle>
                         </div>
 
-                        <HeaderDescription>an API for fetching ERC20 token prices on Polygon and Quickswap</HeaderDescription>
+                        <HeaderDescription>an API for monitoring Liquidity Pools (LP) on Polygon and Quickswap</HeaderDescription>
                         <HeaderDescription>integrate ERC20 quotes into your app without getting out your calculus textbook.</HeaderDescription>
                         <ButtonRow>
                             <CleanLink to="/authentication">

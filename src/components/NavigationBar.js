@@ -125,13 +125,13 @@ const NavigationBar = () => {
         <NavContainer>
             <BrandContainer>
                 <BrandIcon />
-                <Brand>laury.</Brand>
+                <Brand>laury</Brand>
             </BrandContainer>
             <LinkContainer>
                 <CleanLink to="/">
                     <NavbarLink href="#">Home</NavbarLink>
                 </CleanLink>
-                <CleanLink to="/docs">
+                <CleanLink to="/">
                     <NavbarLink href="#">Docs</NavbarLink>
                 </CleanLink>
                 <CleanLink to="/authentication">

@@ -344,6 +344,7 @@ export const Authentication = () => {
 
     const setAuthenticated = async (_email, _ethAddress) => {
         if (state.email !== "" && state.ethAddress !== "") {
+            dispatch({ type: "buttonMessage", payload: "Authenticating.."})
             const key = await fetchApiKey(_email, _ethAddress)
             dispatch({type: "apiKey", payload: key})
             dispatch({ type: "authenticated", payload: true})
